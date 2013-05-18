@@ -1,0 +1,41 @@
+﻿Build started 13/05/2013 20:50:29.
+     1>Project "F:\Epitech\Chine\Projects\Zelda_Like\Zelda_Like\Zelda_Like.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Zelda_Like.unsuccessfulbuild".
+       PreBuildEvent:
+         if not exist F:\Epitech\Chine\Projects\Zelda_Like\\bin\Release\\*.dll copy C:\SFML-1.6\lib\*.dll F:\Epitech\Chine\Projects\Zelda_Like\\bin\Release\
+         :VCEnd
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\SFML-2.0\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Sources\Game.cpp Sources\Intro.cpp Sources\main.cpp Sources\Renderer.cpp
+         Game.cpp
+         Intro.cpp
+         main.cpp
+         Renderer.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Epitech\Chine\Projects\Zelda_Like\\bin\Release\Zelda_Like.exe" /NOLOGO /LIBPATH:"C:\SFML-2.0\lib\Release" "sfml-audio-s.lib" "sfml-graphics-s.lib" "sfml-system-s.lib" "sfml-window-s.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Zelda_Like.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Epitech\Chine\Projects\Zelda_Like\bin\Release\Zelda_Like.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Epitech\Chine\Projects\Zelda_Like\\bin\Release\Zelda_Like.lib" /MACHINE:X86 Release\Game.obj
+         Release\Intro.obj
+         Release\main.obj
+         Release\Renderer.obj
+     1>main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Text::Text(void)" (__imp_??0Text@sf@@QAE@XZ)
+     1>main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Text::~Text(void)" (__imp_??1Text@sf@@UAE@XZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) protected: virtual void __thiscall sf::Window::onResize(void)" (__imp_?onResize@Window@sf@@MAEXXZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) protected: virtual void __thiscall sf::Window::onCreate(void)" (__imp_?onCreate@Window@sf@@MAEXXZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QBE_NXZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@QAEXXZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Window::~Window(void)" (__imp_??1Window@sf@@UAE@XZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Window::Window(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0Window@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: float __thiscall sf::Time::asSeconds(void)const " (__imp_?asSeconds@Time@sf@@QBEMXZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z)
+     1>Renderer.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ)
+     1>F:\Epitech\Chine\Projects\Zelda_Like\\bin\Release\Zelda_Like.exe : fatal error LNK1120: 16 unresolved externals
+     1>Done Building Project "F:\Epitech\Chine\Projects\Zelda_Like\Zelda_Like\Zelda_Like.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.14
